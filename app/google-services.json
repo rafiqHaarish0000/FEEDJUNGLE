@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "560674197838",
+    "project_id": "feedjungle-381208",
+    "storage_bucket": "feedjungle-381208.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560674197838:android:0ab02512fbc389e170ce1f",
+        "android_client_info": {
+          "package_name": "com.example.feedjungle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "560674197838-lofajh6g039ukq9c68n2q0qs6lna0r2r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.feedjungle",
+            "certificate_hash": "c2006d5b006446b4f197c8d86c8be51f77e855dd"
+          }
+        },
+        {
+          "client_id": "560674197838-asi2bqsc7t3vurmn6v5dafmeh13fpqk9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaacq32fkPaQzxQCd67yGSXo7oR7C6fEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "560674197838-asi2bqsc7t3vurmn6v5dafmeh13fpqk9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
