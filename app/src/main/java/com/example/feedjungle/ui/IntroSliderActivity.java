@@ -26,12 +26,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.feedjungle.R;
 import com.example.feedjungle.databinding.ActivityIntroSliderBinding;
+import com.example.feedjungle.ui.navigations.DashboardActivity;
 import com.example.feedjungle.utils.CommonFunction;
 import com.example.feedjungle.utils.PermissionUtils;
 
@@ -312,7 +312,7 @@ public class IntroSliderActivity extends AppCompatActivity {
     }
 
     private void onloadNextPage() {
-        mCommonUtils.navigation(IntroSliderActivity.this,DashboardActivity.class);
+        mCommonUtils.navigation(IntroSliderActivity.this, DashboardActivity.class);
         finish();
     }
 

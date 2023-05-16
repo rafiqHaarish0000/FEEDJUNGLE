@@ -65,4 +65,17 @@
         <item name="android:background">@drawable/createbt</item>
     </style>
 
+    <style name="otp_edit_bg" parent="Widget.AppCompat.EditText">
+        <item name="android:padding">16dp</item>
+        <item name="color">@color/edit_box_cl</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/h2_cl</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center</item>
+        <item name="fontFamily">@font/pr</item>
+        <item name="android:layout_width">16dp</item>
+        <item name="android:layout_height">16dp</item>
+        <item name="android:background">@drawable/otp_bg</item>
+    </style>
+
 </resources>

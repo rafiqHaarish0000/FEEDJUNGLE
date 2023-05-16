@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -14,6 +16,7 @@
     <color name="h2_cl">#4A4B4D</color>
     <color name="edit_box_cl">#F2F2F2</color>
     <color name="hint_cl">#707070</color>
+    <color name="otp_cl">#F2F2F2</color>
     <color name="whitey">#FFFFFFFF</color>
     //intro_slider variants
     <!-- dots inactive colors -->

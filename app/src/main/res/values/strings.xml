@@ -6,4 +6,8 @@
     <string name="find_food_you_love">Find Food You Love</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="received_message">message recieved</string>
+    <string name="we_have_sent_an_otp_to_n_your_mobile">We have sent an OTP to\n your Mobile</string>
+    <string name="please_check_your_mobile_number_071_12_continue_to_reset_your_password">Please check your mobile number 071*****12\ncontinue to reset your password</string>
+    <string name="otp_hint"><font size="12">*</font></string>
 </resources>

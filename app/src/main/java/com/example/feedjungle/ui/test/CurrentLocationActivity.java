@@ -48,6 +48,7 @@ import java.util.Locale;
 public class CurrentLocationActivity extends AppCompatActivity implements LocationListener {
     private ActivityCurrentLocationBinding binding;
     LocationManager locationManager;
+    private static final int PERMISSION_REQUEST_CODE = 1000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +60,7 @@ public class CurrentLocationActivity extends AppCompatActivity implements Locati
                 != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(CurrentLocationActivity.this, new String[]{
                     Manifest.permission.ACCESS_FINE_LOCATION
-            }, 100);
+            }, PERMISSION_REQUEST_CODE);
         }
 
         binding.getLocation.setOnClickListener(new View.OnClickListener() {
@@ -71,6 +72,20 @@ public class CurrentLocationActivity extends AppCompatActivity implements Locati
 
         });
 
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        switch (requestCode) {
+            case PERMISSION_REQUEST_CODE:
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
+                } else {
+
+                }
+                break;
+        }
     }
 
     @SuppressLint("MissingPermission")
@@ -86,18 +101,17 @@ public class CurrentLocationActivity extends AppCompatActivity implements Locati
 
     }
 
-
     @Override
     public void onLocationChanged(@NonNull Location location) {
-        Toast.makeText(this, ""+location.getLatitude()+","+location.getLongitude(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "" + location.getLatitude() + "," + location.getLongitude(), Toast.LENGTH_SHORT).show();
         try {
             Geocoder geocoder = new Geocoder(CurrentLocationActivity.this, Locale.getDefault());
-            List<Address> addresses = geocoder.getFromLocation(location.getLatitude(),location.getLongitude(),1);
+            List<Address> addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
             String address = addresses.get(0).getAddressLine(0);
 
             binding.latitude.setText(address);
 
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 

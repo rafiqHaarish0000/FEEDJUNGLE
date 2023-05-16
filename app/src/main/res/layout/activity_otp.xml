@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            style="@style/h2text_bg"
+            android:layout_marginTop="50dp"
+            android:text="@string/we_have_sent_an_otp_to_n_your_mobile" />
+        <TextView
+            android:id="@+id/hidden_number_validate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            style="@style/h3text_bg"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="24dp"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0"
+                style="@style/otp_edit_bg"
+                android:inputType="number"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:layout_marginStart="10dp"
+                android:hint="@string/otp_hint"/>
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0"
+                android:layout_marginStart="18dp"
+                style="@style/otp_edit_bg"
+                android:inputType="number"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:hint="@string/otp_hint"/>
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0"
+                android:layout_marginStart="18dp"
+                style="@style/otp_edit_bg"
+                android:inputType="number"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:hint="@string/otp_hint"/>
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0"
+                android:layout_marginStart="18dp"
+                style="@style/otp_edit_bg"
+                android:inputType="number"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:hint="@string/otp_hint"/>
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0"
+                android:layout_marginStart="18dp"
+                style="@style/otp_edit_bg"
+                android:inputType="number"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:hint="@string/otp_hint"/>
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0"
+                android:layout_marginStart="18dp"
+                style="@style/otp_edit_bg"
+                android:inputType="number"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:hint="@string/otp_hint"/>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="Next"
+            android:textAllCaps="false"
+            style="@style/h2text_bg"
+            android:background="@drawable/btn_lyt"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/h3text_bg"
+                android:text="Didn't Receive?" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                style="@style/h3text_bg"
+                android:textStyle="bold"
+                android:textColor="@color/main_cl"
+                android:text="Click Here" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>
